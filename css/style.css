@@ -81,6 +81,11 @@ button#play {
     background: url(../images/play.png) no-repeat;
     float: left;
     margin-left: -2px;
+    opacity: 1;
+}
+
+button#play:hover {
+    opacity: .8;
 }
 
 button#pause {
@@ -92,12 +97,17 @@ button#pause {
     display: none;
 }
 
+
 button#stop {
     width: 70px;
     height: 70px;
     background: url(../images/stop.png) no-repeat;
     float: left;
     margin-left: 3px;
+}
+
+button#stop:hover {
+    opacity: .8;
 }
 
 button#prev {
