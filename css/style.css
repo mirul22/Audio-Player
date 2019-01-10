@@ -25,12 +25,11 @@ body {
 
 #container {
     width: 330px;
-    min-height: 500px;
+    min-height: 450px;
+    height: 100%;
     background: #333;
-    overflow: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 0px -8px #333;
+    margin: 50px auto 0 auto;
+    border-radius: 8px;
 }
 
 #audio-image {
@@ -38,11 +37,20 @@ body {
     overflow: hidden;
     height: 100%;
     margin-bottom: 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 #audio-image .cover {
     width: 100%;
+    opacity: .8;
 }
+
+#audio-image .cover:hover {
+    width: 100%;
+    opacity: 1;
+}
+
 
 #audio-info {
     text-align: center;
@@ -95,8 +103,12 @@ button#pause {
     float: left;
     margin-left: -2px;
     display: none;
+    opacity: 1;
 }
 
+button#pause:hover {
+    opacity: .8;
+}
 
 button#stop {
     width: 70px;
@@ -116,6 +128,11 @@ button#prev {
     background: url(../images/prev.png) no-repeat;
     float: left;
     margin-top: 15px;
+    opacity: 1;
+}
+
+button#prev:hover {
+    opacity: .4;
 }
 
 button#next {
@@ -124,6 +141,11 @@ button#next {
     background: url(../images/next.png) no-repeat;
     float: right;
     margin-top: 15px;
+    opacity: 1;
+}
+
+button#next:hover {
+    opacity: .4;
 }
 
 #tracker {
@@ -141,6 +163,7 @@ button#next {
 
 #progress {
     height: 10px;
+    margin-bottom: 4px;
     background: url(../images/progress.png) no-repeat;
     display: inline-block;
 }
@@ -170,6 +193,27 @@ button#next {
     background: #666;
 }
 
+footer {
+    text-align: center;
+    width: 93%;
+    padding: 2px 1px 2px 1px;
+    margin: 10px 2% 0 10px;
+    background: #78284a; /* Old browsers */
+	background: -moz-linear-gradient(left, #78284a 0%, #6d8a9f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#78284a), color-stop(100%,#6d8a9f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* IE10+ */
+	background: linear-gradient(to right, #78284a 0%,#6d8a9f 100%); /* W3C */
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+footer:hover {
+    opacity: .8;
+}
 
 
 
