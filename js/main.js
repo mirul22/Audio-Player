@@ -12,7 +12,6 @@ function initAudio(e) {
     
     //Create audio object
     audio = new Audio('media/' + song);
-    console.log(audio);
     
     //Insert audio info
     $('.artist').text(artist);
