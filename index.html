@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="UTF-8">
     <title>HTML5 Audio Player</title>
-	<meta name="Amirul Ikmal" content=""/>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="Amirul Ikmal" content="" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-
-
-
+    <div id="container">
+        <!-- Start Audio Image -->
+        <div id="audio-image">
+            <img class="cover">
+        </div>
+        <!-- End Audio Image -->
+        
+        <div id="audio-player">
+            <!-- Start audio info -->
+            <div id="audio-info">
+                <span class="artist"></span> - <span class="title"></span>
+            </div>
+            <!-- Start audio info -->
+            
+            <!-- Start Volume Control -->
+            <input id="volume" type="range" min="0" max="10" value="4">
+            <!-- End Volume Control -->
+            <br>
+            <!-- Start Button Control -->
+            <div id="buttons">
+                <span>
+                    <button id="prev"></button>
+                    <button id="play"></button>
+                    <button id="pause"></button>
+                    <button id="stop"></button>
+                    <button id="next"></button>
+                </span>
+            </div>
+            <!-- End Button Control -->
+            <div class="clearfix"></div>
+            <!-- Start Tracker View -->
+            <div id="tracker">
+                <div id="progressBar">
+                    <span id="progress"></span>
+                </div>
+                <span id="duration"></span>
+            </div>
+            <!-- End Tracker View -->
+            <div class="clearfix"></div>
+            <!-- Start Playlist View -->
+            <ul id="playlist" class="hidden">
+                <li song="Secondhand Serenade - Maybe" cover="none" artist="Secondhand Serenade">Maybe.mp3</li>
+                <li song="" cover="" artist="">Name of the song2.mp3</li>
+                <li song="" cover="" artist="">Name of the song3.mp3</li>
+            </ul>
+            <!-- End Playlist View -->
+        </div>
+    </div>
 </body>
+
 </html>
