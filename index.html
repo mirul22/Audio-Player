@@ -12,14 +12,14 @@
     <div id="container">
         <!-- Start Audio Image -->
         <div id="audio-image">
-            <img class="cover">
+            <img class="cover" src="images/covers/secondhand-serenade.jpg">
         </div>
         <!-- End Audio Image -->
         
         <div id="audio-player">
             <!-- Start audio info -->
             <div id="audio-info">
-                <span class="artist"></span> - <span class="title"></span>
+                <span class="artist">Secondhand Serenade</span> - <span class="title">Maybe</span>
             </div>
             <!-- Start audio info -->
             
@@ -41,22 +41,25 @@
             <div class="clearfix"></div>
             <!-- Start Tracker View -->
             <div id="tracker">
-                <div id="progressBar">
+                <div id="progress-bar">
                     <span id="progress"></span>
                 </div>
-                <span id="duration"></span>
+                <span id="duration">0.00</span>
             </div>
             <!-- End Tracker View -->
             <div class="clearfix"></div>
             <!-- Start Playlist View -->
             <ul id="playlist" class="hidden">
-                <li song="Secondhand Serenade - Maybe" cover="none" artist="Secondhand Serenade">Maybe.mp3</li>
+                <li class="active" song="Secondhand Serenade - Maybe" cover="none" artist="Secondhand Serenade">Maybe.mp3</li>
                 <li song="" cover="" artist="">Name of the song2.mp3</li>
                 <li song="" cover="" artist="">Name of the song3.mp3</li>
             </ul>
             <!-- End Playlist View -->
         </div>
     </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
