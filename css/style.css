@@ -232,10 +232,62 @@ footer:hover {
 
 @media only screen and (max-width: 600px) {
     #container {
-        width: 95%;
-        height: 95%;
+        width: 85%;
+        height: 85%;
         background: #333;
         margin: 50px auto 0 auto;
         border-radius: 8px;
     }
+
+    button#play {
+        width: 70px;
+        height: 70px;
+        background: url(../images/play.png) no-repeat;
+        float: none;
+        margin: auto 0;
+        opacity: 1;
+    }
+
+    button#pause {
+        width: 70px;
+        height: 70px;
+        background: url(../images/pause.png) no-repeat;
+        float: none;
+        margin: auto 0;
+        opacity: 1;
+    }
+
+    button#stop {
+        width: 70px;
+        height: 70px;
+        background: url(../images/stop.png) no-repeat;
+        float: none;
+        margin: auto 0;
+        opacity: 1;
+    }
+
+    button#prev {
+        width: 70px;
+        height: 70px;
+        background: url(../images/prev.png) no-repeat;
+        float: left;
+        margin-top: 15px;
+        opacity: 1;
+    }
+
+    button#next {
+        width: 70px;
+        height: 70px;
+        background: url(../images/next.png) no-repeat;
+        float: right;
+        margin-top: 15px;
+        opacity: 1;
+    }
+
+    #tracker {
+        position: relative;
+        width: 95%;
+        margin-left: 3%;
+    }
+
 }
